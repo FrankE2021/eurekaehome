@@ -10,6 +10,7 @@ function BarraNavegacion() {
         <NavLink to='/productos'>Productos</NavLink>
         <NavLink to='/servicios'>Servicios</NavLink>
         <NavLink to='/acercade'>AcercaDe</NavLink>
+        <NavLink to='/login'>Login</NavLink>
     </nav>
   )
 }

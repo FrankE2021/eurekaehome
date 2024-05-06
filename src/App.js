@@ -6,6 +6,9 @@ import Servicios from './paginas/Servicios'
 import Portafolio from './paginas/Portafolio'
 import Error404 from './paginas/Error404'
 import Login from './paginas/Login'
+import Conversor from './paginas/proyectos-portafolio/Conversor'
+import Eventos from './paginas/proyectos-portafolio/Eventos'
+import Menu from './paginas/proyectos-portafolio/Menu'
 import BarraNavegacion from './BarraNavegacion'
 import { BrowserRouter,Route, Routes, Navigate } from 'react-router-dom'
 
@@ -23,6 +26,9 @@ function App() {
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/portafolio" element={<Portafolio />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/conversor" element={<Conversor />} />
+        <Route path="/eventos" element={<Eventos />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/error404" element={<Error404 />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
