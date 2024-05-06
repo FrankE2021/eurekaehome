@@ -42,7 +42,7 @@
   
     h1 {
       font-size: 2em; /* Slightly smaller font size for h1 */
-      margin: 20px 0; /* Less margin */
+      margin: 0; /* Less margin */
     }
   
     .App, .contenedor-principal {
