@@ -4,8 +4,9 @@ import Testimonio from './componentes/Testimonio';
 function App() {
   return (
     <div className="App">
+      <h1>"Tu ruta hacia la felicidad comienza aquí: EUREKAE, la plataforma que transforma ideas en alegría"</h1>
       <div className='contenedor-principal'>
-        <h1>"Tu ruta hacia la felicidad comienza aquí: EUREKAE, la plataforma que transforma ideas en alegría"</h1>
+        
         <Testimonio 
           nombre='Frank Ernesto Acosta Rodriguez'
           pais='Brazil'

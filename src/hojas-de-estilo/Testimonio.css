@@ -1,47 +1,60 @@
 .contenedor-testimonio {
-    border-radius: 8px;
-    max-width: 100%; /* Cambiado de width a max-width */
-    height: auto; /* Cambiado de altura fija a altura automática */
-    margin: 10px; /* Simplificado el margen */
-    display: flex;
-    justify-content: center;
-    background-color: #ffffff;
-    box-shadow: 0 3px 1px rgb(0 0 0 / 9%);
+  border-radius: 8px;
+  width: 100%; /* Make width responsive */
+  max-width: 1170px; /* Ensure it doesn't exceed the original width */
+  height: auto; /* Adjust height automatically */
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 3px 1px rgb(0 0 0 / 9%);
+  flex-direction: column; /* Stack children vertically on smaller screens */
 }
 
 .imagen-testimonio {
-    max-height: 100%; /* Cambiado de height a max-height */
-    width: auto;
-    border-radius: 8px;
+  height: auto; /* Adjust height automatically */
+  max-width: 100%; /* Ensure the image is not wider than its container */
+  border-radius: 8px;
 }
 
 .contenedor-texto-testimonio {
-    text-align: center;
-    padding: 20px; /* Reducido el padding */
-    font-family: Lato, sans-serif;
-    font-weight: 400;
-    line-height: 1.5rem;
+  text-align: center;
+  padding: 20px; /* Adjust padding */
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
-.nombre-testimonio {
-    font-size: 1.3rem;
-}
-
-.cargo-testimonio {
-    font-size: 1.3rem;
-    margin-top: 10px; /* Ajustado el margen superior */
-    padding-bottom: 20px; /* Reducido el padding */
+.nombre-testimonio, .cargo-testimonio {
+  font-size: 1rem; /* Adjust font size for smaller screens */
 }
 
 .texto-testimonio {
-    font-size: 1.1rem;
-    text-align: justify;
+  font-size: 1rem; /* Adjust font size for smaller screens */
+  text-align: justify;
 }
 
-/* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
-@media screen and (max-width: 768px) {
-    .contenedor-testimonio {
-        flex-direction: column; /* Cambiar a disposición en columna en pantallas pequeñas */
-        align-items: center; /* Centrar elementos en pantallas pequeñas */
-    }
+/* Media query for tablets and below */
+@media (max-width: 768px) {
+  .contenedor-testimonio {
+	flex-direction: column;
+	padding: 20px; /* Add some padding on smaller screens */
+  }
+
+  .contenedor-texto-testimonio, .nombre-testimonio, .cargo-testimonio, .texto-testimonio {
+	padding: 10px; /* Reduce padding */
+	font-size: 0.9rem; /* Slightly reduce font size */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .contenedor-testimonio {
+	margin: 10px 0; /* Adjust margins for very small screens */
+  }
+
+  .contenedor-texto-testimonio, .nombre-testimonio, .cargo-testimonio, .texto-testimonio {
+	padding: 5px; /* Further reduce padding */
+	font-size: 0.8rem; /* Further reduce font size for very small screens */
+  }
 }
