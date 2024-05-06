@@ -1,5 +1,5 @@
 import React from 'react'
-import '../hojas-de-estilo/Testimonio.css'
+import './Testimonio.css'
 
 function Testimonio(props) {
   return (

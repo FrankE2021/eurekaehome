@@ -1,31 +1,34 @@
-import './App.css';
-import Testimonio from './componentes/Testimonio';
+import React from 'react'
+import AcercaDe from './paginas/AcercaDe'
+import Home from './paginas/Home'
+import Productos from './paginas/Productos'
+import Servicios from './paginas/Servicios'
+import Portafolio from './paginas/Portafolio'
+import Error404 from './paginas/Error404'
+import Login from './paginas/Login'
+import BarraNavegacion from './BarraNavegacion'
+import { BrowserRouter,Route, Routes, Navigate } from 'react-router-dom'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>"Tu ruta hacia la felicidad comienza aquí: EUREKAE, la plataforma que transforma ideas en alegría"</h1>
-      <div className='contenedor-principal'>
-        
-        <Testimonio 
-          nombre='Frank Ernesto Acosta Rodriguez'
-          pais='Brazil'
-          imagen='frank'
-          cargo='CEO e Ingeniero Programador'
-          empresa='EUREKAE'
-          testimonio='Hace alrededor de 2 años surgio en mi la idea de crear una empresa como Eurekae, que ha ido mudando de proposito con los cambios, sin embargo hoy la perspectiva es diferente: Por que no hacer una multiplataforma con todas nuestras soluciones?. Hoy esa es la meta que nos define como empresa.'
-        />
-        <Testimonio
-          nombre='Deisy Daniela Acosta Rodriguez'
-          pais='Cuba'
-          imagen='daniela'
-          cargo='Promotora y Gerente de Marketing'
-          empresa='EUREKAE'
-          testimonio='Cuando  decidi unirme a esta empresa no imagine lo que podia alcanzar en mi vida. Ahora con el uso de mis habilidades he logrado cumplir una de mis principales metas de crecer profesionalmente'
-        />
-      </div>  
-    </div>
-  );
+    <>
+    <BrowserRouter>
+    <BarraNavegacion />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/acercade" element={<AcercaDe />} />
+        <Route path="/productos" element={<Productos />} />
+        <Route path="/servicios" element={<Servicios />} />
+        <Route path="/portafolio" element={<Portafolio />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/error404" element={<Error404 />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </BrowserRouter>
+    </>
+  )
 }
 
-export default App;
+export default App
