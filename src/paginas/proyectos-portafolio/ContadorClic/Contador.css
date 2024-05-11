@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+		
+}
+
+
+html, body{
+  background-color: #3F88C5;
+	flex-direction: column;
+  align-items: center;
+}
+
+.contador{
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 5px;
+	font-family: Lato, sans-serif;
+
+}
+
+.eurekae-logo-contenedor{
+	width: 8%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+
+.eurekae-logo{
+	height: 80px;
+}
+
+.contenedor-principal-contador{
+	height: 550px;
+	min-width: 600px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+  align-items: center;
+	justify-content: center;
+}

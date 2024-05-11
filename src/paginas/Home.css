@@ -5,7 +5,8 @@
   
   html, body {
     font-size: 18px; /* Adjust the base font size */
-    background-color: #f5f6f7;
+    background-color: #272522;
+    background: linear-gradient(to right, gray, darkgray);
   }
   
   h1 {
@@ -15,6 +16,8 @@
     font-weight: 700;
     line-height: 1.1;
     margin: 40px 0;
+    border-radius: 10px;
+    color: white;
   }
   
   .App {

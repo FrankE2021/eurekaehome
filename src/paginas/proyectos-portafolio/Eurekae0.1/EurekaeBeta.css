@@ -1,0 +1,28 @@
+
+.img {
+    width: 100%;
+    height: fit-content;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.cajaCentral {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 5px;
+    margin: 5px;
+    gap: 10px; /* Adds space between items */
+    align-items: center; /* Aligns items vertically */
+    height: 50%; /* Reduces height */
+    align-items: flex-start; /* Aligns items from the top */
+}
+.name {
+    color: darkorange;
+}
+
+.precio {
+    margin-top: 10%;
+}
+
+
