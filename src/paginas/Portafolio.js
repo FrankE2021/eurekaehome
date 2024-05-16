@@ -10,7 +10,7 @@ function Portafolio() {
         <ProjectosPortafolio
         nombreP='projecto-conversor'
         ruta='/conversor'
-        titulo='Conversor Eurekae optimizado'
+        titulo='Conversor Eurekae'
         />
 
         <ProjectosPortafolio
@@ -19,24 +19,59 @@ function Portafolio() {
         titulo='Eventos Eurekae'
         />
 
-        
-        <div className='projecto-eventos'><NavLink to='/eventos'>Eventos Eurekae</NavLink></div> 
-        <br/>    	
-        <div className='projecto-menu'><NavLink to='/menu'>Menu Eurekae</NavLink></div> 
-        <br/>
-        <div className='projecto-aficionesreyes'><NavLink to='/aficionesreyes'>Aficiones Reyes</NavLink></div>
-        <br/>
-        <div className='projecto-cenaconrey'><NavLink to='/cenaconrey'>Cena Con Reyes</NavLink></div> 
-        <br/>
-        <div className='projecto-premios'><NavLink to='/premios'>Premios</NavLink></div> 
-        <br/>
-        <div className='projecto-suma'><NavLink to='/suma'>Suma</NavLink></div> 
-        <br/>
-        <div className='projecto-eurekaebeta'><NavLink to='/eurekaebeta'>EurekaeBeta</NavLink></div> 
-        <br/>
-        <div className='projecto-comprasapp'><NavLink to='/comprasapp'>Compras</NavLink></div> 
-        <br/>
-        <div className='projecto-contador'><NavLink to='/contador'>Contador</NavLink></div> 
+        <ProjectosPortafolio
+        nombreP='projecto-menu'
+        ruta='/menu'
+        titulo='Menu Eurekae'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-aficionesreyes'
+        ruta='/aficionesreyes'
+        titulo='Aficiones Reyes'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-cenaconrey'
+        ruta='/cenaconrey'
+        titulo='Cena Con Reyes'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-premios'
+        ruta='/premios'
+        titulo='Premios'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-suma'
+        ruta='/suma'
+        titulo='Suma'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-eurekaebeta'
+        ruta='/eurekaebeta'
+        titulo='EurekaeBeta'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-comprasapp'
+        ruta='/comprasapp'
+        titulo='Compras'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-contador'
+        ruta='/contador'
+        titulo='Contador'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-calculadora'
+        ruta='/calculadora'
+        titulo='Calculadora'
+        />
         
     </div>
   )

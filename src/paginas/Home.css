@@ -1,71 +1,22 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  html, body {
-    font-size: 18px; /* Adjust the base font size */
-    background-color: #272522;
-    background: linear-gradient(to right, gray, darkgray);
-  }
-  
-  h1 {
-    max-width: 940px;
-    font-size: 2.5em;
-    font-family: Lato, sans-serif;
-    font-weight: 700;
-    line-height: 1.1;
-    margin: 40px 0;
-    border-radius: 10px;
-    color: white;
-  }
-  
-  .App {
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
+.App {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1{
+  color: gold;
+}
+
+@media (max-width: 768px) {
   .contenedor-principal {
-    min-height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    html, body {
-      font-size: 16px; /* Smaller font size on smaller screens */
-    }
-  
-    h1 {
-      font-size: 2em; /* Slightly smaller font size for h1 */
-      margin: 0; /* Less margin */
-    }
-  
-    .App, .contenedor-principal {
-      flex-direction: column; /* Stack flex items vertically on small screens */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    html, body {
-      font-size: 14px; /* Even smaller font size on very small screens */
-    }
-  
-    h1 {
-      font-size: 1.5em; /* Further reduce the font size for h1 */
-    }
-  }
-  .contenedor-principal{
-    min-height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+}

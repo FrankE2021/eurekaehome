@@ -1,0 +1,12 @@
+.contenedor-projectos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.contenedor-projectos a {
+    text-decoration: none;
+  }
+  
