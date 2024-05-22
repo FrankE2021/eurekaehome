@@ -4,7 +4,7 @@ const Ahorcado = () => {
   return (
     <div style={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
       <iframe
-        src="https://menu-two-hazel.vercel.app/"
+        src="https://reservaciones-smoky.vercel.app/"
         style={{ width: '100%', height: '100%', border: 'none' }}
         title="Ahorcado"
       ></iframe>

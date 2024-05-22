@@ -23,6 +23,15 @@ import EurekaeBeta from '../paginas/proyectos-portafolio/Eurekae0.1/EurekaeBeta'
 import CompraApp from '../paginas/proyectos-portafolio/Compras/CompraApp'
 import Contador from '../paginas/proyectos-portafolio/ContadorClic/Contador'
 import Calculadora from '../paginas/proyectos-portafolio/Calculadora/Calculadora'
+import Info from '../paginas/proyectos-portafolio/Informacion-Personal/Info'
+import Viajes from '../paginas/proyectos-portafolio/Viajando/Viajando'
+import Ahorcado from '../paginas/proyectos-portafolio/Ahorcado/Ahorcado'
+import Parejas from '../paginas/proyectos-portafolio/Parejas/Parejas'
+import NorrisJokes from '../paginas/proyectos-portafolio/NorrisJokes/NorrisJokes'
+import Shopping from '../paginas/proyectos-portafolio/Shopping/Shopping'
+import Idiomas from '../paginas/proyectos-portafolio/Idiomas/Idiomas'
+import Reservaciones from '../paginas/proyectos-portafolio/Reservaciones/Reservaciones'
+import Votacion from '../paginas/proyectos-portafolio/Votacion/Votacion'
 
 
 
@@ -51,6 +60,15 @@ const Router2 = () => {
         <Route path="/comprasapp" element={<CompraApp />} />
         <Route path="/contador" element={<Contador />} />
         <Route path="/calculadora" element={<Calculadora />} />
+        <Route path="/info" element={<Info />} />
+        <Route path="/viajes" element={<Viajes />} />
+        <Route path="/ahorcado" element={<Ahorcado />} />
+        <Route path="/parejas" element={<Parejas />} />
+        <Route path="/norrisjokes" element={<NorrisJokes />} />
+        <Route path="/shopping" element={<Shopping />} />
+        <Route path="/idiomas" element={<Idiomas />} />
+        <Route path="/reservaciones" element={<Reservaciones />} />
+        <Route path="/votacion" element={<Votacion />} />
     </Routes>
     </>
   )

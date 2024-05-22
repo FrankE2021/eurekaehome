@@ -72,6 +72,60 @@ function Portafolio() {
         ruta='/calculadora'
         titulo='Calculadora'
         />
+
+        <ProjectosPortafolio
+        nombreP='projecto-info'
+        ruta='/info'
+        titulo='Informacion'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-viajes'
+        ruta='/viajes'
+        titulo='Viajando'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-ahorcado'
+        ruta='/ahorcado'
+        titulo='El Ahorcado'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-parejas'
+        ruta='/parejas'
+        titulo='Parejas'
+        />
+        
+        <ProjectosPortafolio
+        nombreP='projecto-norrisjokes'
+        ruta='/norrisjokes'
+        titulo='Norris Jokes'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-shopping'
+        ruta='/shopping'
+        titulo='Shopping'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-idiomas'
+        ruta='/idiomas'
+        titulo='Idiomas'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-reservaciones'
+        ruta='/reservaciones'
+        titulo='Reservaciones'
+        />
+
+        <ProjectosPortafolio
+        nombreP='projecto-votacion'
+        ruta='/votacion'
+        titulo='Votacion'
+        />
         
     </div>
   )
