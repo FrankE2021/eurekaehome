@@ -1,22 +1,17 @@
-import React from 'react'
-import logoEurekae from '../../../imagenes/logo-eurekae.png'
-import './Calculadora.css'
+import React from 'react';
 
-function Calculadora() {
+const Ahorcado = () => {
   return (
-      <div className='contenedor-principal-calculadora'>
-        <div className='eurekae-logo-calculadora-contenedor'>
-          <img 
-            src={logoEurekae}
-            className='eurekae-logo'
-            alt='Logo de Eurekae' />
-        </div>
+    <div style={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
+      <iframe
+        src="https://calculadora-two-silk.vercel.app/"
+        style={{ width: '100%', height: '100%', border: 'none' }}
+        title="Ahorcado"
+      ></iframe>
+    </div>
+  );
+};
 
-        <div className='contenedor-calculadora'>
-          
-        </div>
-      </div>
-  )
-}
+export default Ahorcado;
 
-export default Calculadora
+
